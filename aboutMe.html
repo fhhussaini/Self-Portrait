@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<title> Self-Portrait </title>
+</head>
+<body>
+
+
+
+
+<div class="topnav">
+  <a href="index.html">Reflection</a>
+  <a class="active" href="aboutMe.html">About Me</a>
+ <a href="familyTree.html">Family Tree</a>
+</div>
+
+
+
+<div class="main">
+<p>
+ </p>
+<p>
+ </p>
+<p>
+Hello World! I'm Faisal Alhussaini, a 16 year old high-school student taking INF STD 30 in UCLA's Summer Sessions A</p>
+
+
+<p> here are some of my achievements:
+
+</p>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="highestGPA.jpg" style="width:100%">
+  <div class="text">I got The Highest GPA in the school</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="mathOlympiads.jpg" style="width:50%">
+  <div class="text1">Winning the Math Olympiads</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="MUN.jpg" style="width:50%">
+  <div class="text1">Best speaker award in MUN</div>
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+</div>  
+
+</body>
+</html> 
